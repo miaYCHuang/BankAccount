@@ -1,10 +1,3 @@
-test.py為簡單練習swagger
-
-main.py為API練習
-
-之後需整合
-
-
 Package       Version
 ------------- -------
 python        3.11.4
