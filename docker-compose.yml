@@ -1,0 +1,40 @@
+version: '3.1'
+
+services:
+  pythonAPI:
+    image: 478598238047.dkr.ecr.us-east-1.amazonaws.com/test:1.2
+    container_name: python_api
+    ports:
+      - 3000:3000
+    restart: always
+    volumes:
+      - /app
+    
+  mysql:
+    image: mysql:8.0
+    container_name: db_mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_DATABASE=api
+      - MYSQL_ROOT_USER=root
+      - MYSQL_ROOT_PASSWORD=12345678
+      - MYSQL_USER=dbadmin 
+      - MYSQL_PASSWORD=12345678
+    volumes:
+      - /home/yourUserName/mql/initdb:/docker-entrypoint-initdb.d
+      - /home/yourUserName/mql/datadir:/var/lib/mysql
+      - /home/yourUserName/mql/my.cnf:/etc/mysql/conf.d/my.cnf
+
+
+  phpmyadmin:
+    image: phpmyadmin:5.2
+    container_name: web_phpmyadmin
+    restart: always
+    ports:
+      - 80:80
+    environment:
+      - PMA_HOST=mysql
+    links:
+      - mysql

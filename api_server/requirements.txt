@@ -1,0 +1,7 @@
+Flask==2.1.3
+Werkzeug==2.0.3
+flask-swagger-ui
+Flask-RESTful
+PyMySQL
+flask_swagger_ui
+cryptography
