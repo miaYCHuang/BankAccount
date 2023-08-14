@@ -87,8 +87,14 @@ docker-compose up -d
 
 ---
 使用GCP需至防火牆設定
+
+
 port:80(勾選Http則無需再加入)
+
+
 port:3000
+
+
 ---
 
 ### Usage example 使用範例
