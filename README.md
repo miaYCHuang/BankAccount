@@ -3,8 +3,7 @@
 > 實現銀行中使用者與銀行帳戶間的連結
 
 透過[Swagger](http://34.81.137.177:3000/swagger/)可簡單得操作各項API，並與[資料庫](http://34.81.137.177:80/)聯動。
-使用者名稱：root
-密碼：12345678
+
 
 ## Getting Started 使用指南
 
@@ -98,9 +97,13 @@ port:3000
 ---
 
 ### Usage example 使用範例
+IP需替換成自己環境的IP
+
 
 資料庫為：http://34.81.137.177:80/
-
+    * 使用者名稱：root
+    * 密碼：12345678
+    * 匯入->BankAccount/mysql中的api_accounts.sql與api_users.sql(github)
 
 API測試：http://34.81.137.177:3000/
 
