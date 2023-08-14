@@ -42,3 +42,45 @@ character_set_server = utf8
 ```sh
 wget "https://drive.google.com/u/0/uc?id=1ND8v728BU39A5TQ_qQvd0Vro-9DUMWvW&export=download" -O "docker-compose.yml"
 ```
+
+查看目錄路徑:
+
+```sh
+pwd
+```
+
+修改docker-compose裡pythonAPI的Volume位置:
+
+```sh
+vim docker-compose.yml
+```
+
+```sh
+      - /home/需修改/mql/initdb:/docker-entrypoint-initdb.d
+      - /home/需修改/mql/datadir:/var/lib/mysql
+      - /home/需修改/mql/my.cnf:/etc/mysql/conf.d/my.cnf
+```
+
+安裝AWS:
+```sh
+sudo apt  install awscli
+aws configure
+```
+aws configure為:
+```sh
+AKIAW63VNR5P32IIUMFN
+46qRyuTTZG4lpgF8BkdTjynPkPRo+vPPzJ9stBK4
+空格
+空格
+```
+
+擷取驗證字符並將 Docker 用戶端驗證至您的登錄檔。
+使用 AWS CLI：:
+```sh
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 478598238047.dkr.ecr.us-east-1.amazonaws.com
+```
+
+建立docker-compose:
+```sh
+docker-compose up -d
+```
