@@ -84,3 +84,22 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 ```sh
 docker-compose up -d
 ```
+
+---
+使用GCP需至防火牆設定
+port:80(勾選Http則無需再加入)
+port:3000
+---
+
+### Usage example 使用範例
+
+資料庫為：http://34.81.137.177:80/
+
+
+API測試：http://34.81.137.177:3000/
+
+
+API測試(資料庫)：http://34.81.137.177:3000/test
+
+
+API範例(Swagger)：http://34.81.137.177:3000/swagger/
