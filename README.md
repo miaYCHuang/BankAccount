@@ -67,8 +67,8 @@ aws configure
 ```
 aws configure為:
 ```sh
-AKIAW63VNR5P32IIUMFN
-46qRyuTTZG4lpgF8BkdTjynPkPRo+vPPzJ9stBK4
+AKIAW63VNR5XXXXXXX
+46qRyuTTZG4XXXXXXXXXXXXXXXXXxx
 空格
 空格
 ```
