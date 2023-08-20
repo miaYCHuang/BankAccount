@@ -61,7 +61,7 @@ vim docker-compose.yml
 ```
 
 ---
-#### 下載AWS上的image需執行以下步驟
+#### #下載AWS上的image需執行以下步驟
 ```sh
       image: 625565224680.dkr.ecr.ap-southeast-2.amazonaws.com/api:1.2
 ```
@@ -91,7 +91,7 @@ docker-compose up -d
 ```
 
 ---
-#### 使用GCP需至防火牆設定
+#### #使用GCP需至防火牆設定
 
 
 port:80(勾選Http則無需再加入)
