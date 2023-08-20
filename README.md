@@ -60,15 +60,21 @@ vim docker-compose.yml
       - /home/需修改/mql/my.cnf:/etc/mysql/conf.d/my.cnf
 ```
 
+
+#### 下載AWS上的image需執行以下步驟
+```sh
+      image: 625565224680.dkr.ecr.ap-southeast-2.amazonaws.com/api:1.2
+```
+
 安裝AWS:
 ```sh
 sudo apt install awscli
 aws configure
 ```
-aws configure為:
+aws configure為(需要請與我聯繫):
 ```sh
-AKIAZDJUXZ3UK7TKXG4K
-RceFHhc9+qJWI9p7Z16yHdfcGJh2/RrLRHjLUoRw
+存取金鑰
+私密存取金鑰
 空格
 空格
 ```
