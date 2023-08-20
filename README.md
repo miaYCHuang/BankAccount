@@ -2,7 +2,7 @@
 
 > 實現銀行中使用者與銀行帳戶間的連結
 
-透過[Swagger](http://34.81.137.177:3000/swagger/)可簡單的操作各項API並與[資料庫](http://34.81.137.177:80/)聯動。
+透過[Swagger](http://34.81.137.177:3000/swagger/)可簡單的操作各項API並與[資料庫](http://34.81.137.177:80/)連動。
 
 
 ## Getting Started 使用指南
@@ -62,13 +62,13 @@ vim docker-compose.yml
 
 安裝AWS:
 ```sh
-sudo apt  install awscli
+sudo apt install awscli
 aws configure
 ```
 aws configure為:
 ```sh
-AKIAW63VNR5XXXXXXX
-46qRyuTTZG4XXXXXXXXXXXXXXXXXxx
+AKIAZDJUXZ3UK7TKXG4K
+RceFHhc9+qJWI9p7Z16yHdfcGJh2/RrLRHjLUoRw
 空格
 空格
 ```
@@ -76,7 +76,7 @@ AKIAW63VNR5XXXXXXX
 擷取驗證字符並將 Docker 用戶端驗證至您的登錄檔。
 使用 AWS CLI：:
 ```sh
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 478598238047.dkr.ecr.us-east-1.amazonaws.com
+aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 625565224680.dkr.ecr.ap-southeast-2.amazonaws.com
 ```
 
 建立docker-compose:
@@ -105,7 +105,7 @@ IP需替換成自己環境的IP
 
     * 使用者名稱：root
     * 密碼：12345678
-    * 匯入->BankAccount/mysql中的api_accounts.sql與api_users.sql(github)
+    * 匯入資料表，在github裡的BankAccount/mysql/api_accounts.sql與api_users.sql
 
 API測試：http://34.81.137.177:3000/
 
