@@ -10,7 +10,7 @@
 
 ### Prerequisites 使用條件
 
-1. Linux環境(此處使用的是GCP Ubuntu20.04 LTS)
+1. Linux環境(例如:GCP Ubuntu20.04 LTS)
 2. 安裝Docker
     * [下載Docker](https://docs.docker.com/engine/install/ubuntu/)
     * [Docker設置](https://docs.docker.com/engine/install/linux-postinstall/)
@@ -60,7 +60,7 @@ vim docker-compose.yml
       - /home/需修改/mql/my.cnf:/etc/mysql/conf.d/my.cnf
 ```
 
-
+---
 #### 下載AWS上的image需執行以下步驟
 ```sh
       image: 625565224680.dkr.ecr.ap-southeast-2.amazonaws.com/api:1.2
@@ -84,14 +84,14 @@ aws configure為(需要請與我聯繫):
 ```sh
 aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 625565224680.dkr.ecr.ap-southeast-2.amazonaws.com
 ```
-
+---
 建立docker-compose:
 ```sh
 docker-compose up -d
 ```
 
 ---
-使用GCP需至防火牆設定
+#### 使用GCP需至防火牆設定
 
 
 port:80(勾選Http則無需再加入)
