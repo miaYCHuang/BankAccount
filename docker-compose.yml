@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   pythonAPI:
-    image: 625565224680.dkr.ecr.ap-southeast-2.amazonaws.com/api:1.2
+    image: miaychuang/api_flask:1.2
     #miaychuang/api_flask:1.2
     #625565224680.dkr.ecr.ap-southeast-2.amazonaws.com/api:1.2
     container_name: python_api
