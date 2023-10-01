@@ -11,7 +11,7 @@
 ### Prerequisites 使用條件
 
 1. Linux環境(例如:GCP Ubuntu20.04 LTS)
-2. 安裝Docker
+2-1. 安裝Docker
    2-1. 有序子列表參考官網
    
     * [下載Docker](https://docs.docker.com/engine/install/ubuntu/)
