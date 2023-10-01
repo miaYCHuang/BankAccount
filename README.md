@@ -12,12 +12,12 @@
 
 1. Linux環境(例如:GCP Ubuntu20.04 LTS)
 2. 安裝Docker
-   2-1. 參考官網
+2-1. 參考官網
    
     * [下載Docker](https://docs.docker.com/engine/install/ubuntu/)
     * [Docker設置](https://docs.docker.com/engine/install/linux-postinstall/)
     * [下載Docker-Compose](https://docs.docker.com/compose/install/standalone/)
-   2-2. 執行Shell Script
+2-2. 執行Shell Script
     * [下載](https://drive.google.com/drive/folders/1z7FMeGuAgzjEBOxhyFUDH1iBzzcbbbDH?usp=sharing)
 ```sh
 chmod +x ./*
