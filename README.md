@@ -16,7 +16,7 @@
     * [Docker設置](https://docs.docker.com/engine/install/linux-postinstall/)
     * [下載Docker-Compose](https://docs.docker.com/compose/install/standalone/)
 3. 安裝Docker-Shell Script
-    * [下載](https://drive.google.com/drive/folders/1z7FMeGuAgzjEBOxhyFUDH1iBzzcbbbDH?usp=sharing)
+    * [下載點](https://drive.google.com/drive/folders/1z7FMeGuAgzjEBOxhyFUDH1iBzzcbbbDH?usp=sharing)
 ```sh
 chmod +x ./*
 ./installDocker.sh
