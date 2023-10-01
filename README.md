@@ -11,12 +11,11 @@
 ### Prerequisites 使用條件
 
 1. Linux環境(例如:GCP Ubuntu20.04 LTS)
-2. 安裝Docker
-    > 參考官網
+2. 安裝Docker-官網
     * [下載Docker](https://docs.docker.com/engine/install/ubuntu/)
     * [Docker設置](https://docs.docker.com/engine/install/linux-postinstall/)
     * [下載Docker-Compose](https://docs.docker.com/compose/install/standalone/)
-    > Shell Script
+3. 安裝Docker-Shell Script
     * [下載](https://drive.google.com/drive/folders/1z7FMeGuAgzjEBOxhyFUDH1iBzzcbbbDH?usp=sharing)
 ```sh
 chmod +x ./*
