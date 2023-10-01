@@ -19,12 +19,12 @@
     * [下載Docker-Compose](https://docs.docker.com/compose/install/standalone/)
    2-2. 執行Shell Script
     * [下載](https://drive.google.com/drive/folders/1z7FMeGuAgzjEBOxhyFUDH1iBzzcbbbDH?usp=sharing)
-    ```sh
+```sh
 chmod +x ./*
 ./installDocker.sh
 ./without_sudo.sh
 ./installDockerCompose.sh
-   ```
+```
 
 ### Installation 安裝
 
