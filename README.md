@@ -2,7 +2,7 @@
 
 > 實現銀行中使用者與銀行帳戶間的連結
 
-透過[Swagger](http://34.81.137.177:3000/swagger/)可簡單的操作各項API並與[資料庫](http://34.81.137.177:80/)連動。
+透過[Swagger](http://34.81.126.129:3000/swagger/)可簡單的操作各項API並與[資料庫](http://34.81.126.129:80/)連動。
 
 
 ## Getting Started 使用指南
@@ -104,20 +104,20 @@ docker-compose up -d
 IP需替換成自己環境的IP
 
 
-資料庫為：http://34.81.137.177:80/
+資料庫為：http://34.81.126.129:80/
 
 
     * 使用者名稱：root
     * 密碼：12345678
     * 匯入資料表，在github裡的BankAccount/mysql/api_accounts.sql與api_users.sql
 
-API測試：http://34.81.137.177:3000/
+API測試：http://34.81.126.129:3000/
 
 
-API測試(資料庫)：http://34.81.137.177:3000/test
+API測試(資料庫)：http://34.81.126.129:3000/test
 
 
-API範例(Swagger)：http://34.81.137.177:3000/swagger/
+API範例(Swagger)：http://34.81.126.129:3000/swagger/
 
 ---
 #### #使用GCP需至防火牆設定
